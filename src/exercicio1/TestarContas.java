@@ -4,9 +4,9 @@ public class TestarContas {
 
 	public static void main(String[] args) {
 		
-		Conta c = new Conta();
-		Conta cc = new ContaCorrente();
-		Conta cp = new ContaPoupanca();
+		Conta c = new Conta(100);
+		Conta cc = new ContaCorrente(100);
+		Conta cp = new ContaPoupanca(100);
 		
 		c.deposita(1000);
 		cc.deposita(1000);
@@ -18,12 +18,7 @@ public class TestarContas {
 		abc.roda(cc);
 		abc.roda(cp);
 		
-		System.out.println("Saldo Total: " + abc.getSaldoTotal());
-		//System.out.println("");
-		//System.out.println("");
-		
-		
-		
+		System.out.println("Saldo Total: " + abc.getSaldoTotal());					
 	}
 
 }

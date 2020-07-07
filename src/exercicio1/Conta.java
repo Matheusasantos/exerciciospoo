@@ -4,6 +4,9 @@ public class Conta {
 	
 	protected double saldo;
 		
+	public Conta(double saldo) {
+		
+	}
 	public double getSaldo() {
 		return this.saldo;
 	}
@@ -17,7 +20,5 @@ public class Conta {
 	
 	public void atualiza(double taxa) {
 		this.saldo += saldo*taxa;		
-	}
-	
-	
+	}		
 }
